@@ -1,0 +1,987 @@
+body {
+	margin:0px; 
+	padding:0px;
+	font-family: Arial, Helvetica, Tahoma, sans-serif;
+	font-size:10px;
+	color: #ffffff;
+} 
+
+a, button, a:hover{
+	cursor:pointer;
+	text-decoration: none;
+}
+
+img{
+	border:0;
+}
+
+/*Estrutura do site..........................................................................*/
+
+header{
+	float: left;
+	position:fixed;
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	background-color: #f9f8f7;
+	box-shadow: 5px 5px 5px rgb(0,0,0,0.4);
+    z-index: 1002;
+	position:fixed; 
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+footer{
+	position:relative; 
+	float:left;
+	text-align: center;
+	width:100%;
+	height:94px;
+	padding-top: 30px;
+	background:#2d498c;
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+
+/* Formatação do cabecalho ---------------------------------------------------------- */
+
+.container{
+	position: relative;
+	display: inline-block;
+	width: 980px;
+	border: 0px solid red;
+}
+
+/* Menu */
+.oculto{
+	display: none;
+}
+
+.menuTopo{
+	position:relative;
+	float:left;
+	width: auto;
+	padding-top: 25px;
+    -webkit-transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5);  
+    -moz-transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5); 
+    -o-transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5);
+    -ms-transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5); 
+    transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5);
+}
+
+.menuTopo ul{
+	position: relative;
+	float: left;
+	width: auto;
+}
+
+.menuTopo li{
+	position: relative;
+	float: left;
+	width: auto;
+}
+
+.menuTopo li a{
+    font-family: 'open_sanslight';
+	color:#2d498c;
+	font-size:16px;
+    height: auto;
+    margin-right: 37px;
+    text-decoration: none;
+}
+
+.menuTopo li a:hover, .menuTopo li a:focus{
+	color:#000 !important;
+}
+
+.menuOculto{
+	position:relative;
+	float:right;
+	right:70px;
+	top:12px;
+	font-size:20px;
+	display:none;
+	font-family: 'din_lightregular';
+}
+
+.linha0{
+	position:relative;
+	float:left;
+	width:100%;
+	height:0px;
+	z-index:99;
+	overflow: visible;
+}
+
+.linha{
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+.glyphicon-menu-hamburger{
+	font-size: 30px;
+	top: 2px;
+}
+
+.login{
+	position: relative;
+	float: right;
+	width: 30%;
+}
+
+header p{
+	position:relative;
+	float:right;
+	text-align: right;
+	width: 100%;
+    font-family: 'open_sanslight';
+	color:#eb8420;
+	font-size:14px;
+	padding-top: 19px;
+}
+
+header a{
+	position:relative;
+	float:right;
+	text-align: right;
+	width: 100%;
+    font-family: 'open_sanslight';
+	color:#605f5e;
+	font-size:14px;
+    margin-right: 30px;
+	padding-top:4px;
+    text-decoration: underline;
+}
+
+/*Formatacao do Rodape  ---------------------------------------------------------------------------- */
+
+.centralizaRodape{
+	position:relative;
+	width:auto;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+footer  p{
+	position:relative;
+	float: left;
+	text-align: left;
+    font-family: 'open_sansregular';
+	font-size:15px;
+	color: #ffffff;
+	width: auto;
+	padding-top: 12px;
+	padding-left:10px;
+}
+
+footer img{
+	position:relative;
+	float: left;
+	margin-left:40px;
+}
+
+footer a{
+	color: #ffffff;
+	text-decoration:underline;
+}
+
+/*************** HOME *********************/
+
+.banner{
+	margin-top: 70px;
+	margin-bottom: 17px;
+	text-align: center;
+}
+
+.faixaCategorias{
+	height: 73px;
+	background-color: #f1eeef;
+	margin-bottom: 17px;
+	text-align: center;
+}
+
+.categorias{
+	position: relative;
+	float: left;
+    text-align: center;
+	width: 80px;
+	height: 73px;
+	padding-top: 8px;
+    background: url("../images/borda.png") center left no-repeat;
+    cursor: pointer;
+}
+
+.categorias:first-child{
+	background-image: none;
+}
+
+.categorias p{
+    font-family: 'open_sansregular';
+    text-align: center;
+    width: 100%;
+    font-size: 11px;
+	line-height:11px;
+    margin: 0;
+	color: #2d498c;
+}
+
+.servicos{
+	text-align: center;
+}
+
+.servico{
+	position: relative;
+	float: left;
+    text-align: center;
+	width: 18.6%;
+	margin-right: 1.7%;
+	height: 195px;
+	padding-top: 30px;
+	margin-bottom: 22px;
+	overflow: hidden;
+    -webkit-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);  
+    -moz-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0); 
+    -o-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    -ms-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0); 
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+.servico:nth-child(5n+5){
+	margin-right: 0%;
+}
+
+.servico:last-child{
+	margin-right: 0% !important;
+}
+
+.fundoRosa{
+	background-color: #ce335b;
+}
+
+.fundoRoxo{
+	background-color: #750b71;
+}
+
+.fundoRoxoEscuro{
+	background-color: #5b1262;
+}
+
+.fundoPreto{
+	background-color: #000;
+}
+
+.fundoAzulClaro{
+	background-color: #00adbc;
+}
+
+.fundoAzulEscuro{
+	background-color: #0079b6;
+}
+
+.fundoVerde{
+	background-color: #004656;
+}
+
+.fundoVerdeEscuro{
+	background-color: #004f33;
+}
+
+.descricaoServico{
+	position: absolute;
+	float: left;
+    text-align: center;
+	width: 100%;
+	height: 50px;
+	height: 195px;
+	bottom: -145px;
+	padding-top: 5px;
+    background: rgb(255,255,255,0.9);
+    -webkit-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);  
+    -moz-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0); 
+    -o-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    -ms-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0); 
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+.servico:hover > .descricaoServico, .descricaoServico:hover{
+	bottom: 0;
+	padding-top: 20px;
+}
+
+.descricaoServico h2{
+    font-family: 'open_sanssemibold';
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+    margin: 0;
+	color: #605f5e;
+}
+
+.descricaoServico h3{
+    font-family: 'open_sanslight';
+    text-align: center;
+    width: 100%;
+    font-size: 1.6em;
+    margin: 0;
+	color: #605f5e;
+}
+
+.botaoSaiba{
+	position: relative;
+	display: inline-block;
+    width: 90%;
+    height: 30px;
+    padding-top: 7px;
+    border-radius: 0px;
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'open_sanslight_italic';
+    color: #fff;
+    background-color: #eb8420;
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+.botaoSaiba:hover, .botaoSaiba:focus{
+	color: #000000 !important;
+}
+
+.quemSomos{
+	text-align:center;
+}
+
+.fundoQuemSomos{
+	height: 400px;
+	margin-top: 50px;
+    background: url("../images/fundo-mulher.png") top right no-repeat;
+}
+
+.quemSomos h1{
+    font-family: 'open_sansregular';
+    width: 80%;
+	text-align:left;
+    font-size: 3em;
+    margin: 0;
+	color: #2d498c;
+}
+
+.quemSomos p{
+    font-family: 'open_sansregular';
+    width: 68%;
+    font-size: 14px;
+    line-height: 17px;
+	padding-top:10px;
+	text-align:left;
+    margin: 0;
+	color: #605f5e;
+}
+
+.quemSomos span{
+    font-family: 'open_sansbold';
+}
+
+.quemSomos ul{
+	position:relative;
+	float:left;
+	width: 65%;
+	padding-top: 15px;
+    transition: all 0.2s cubic-bezier(0.0, 0.0, 0.1, 0.5);
+}
+
+.quemSomos li{
+	position: relative;
+	float: left;
+	width: 100%;
+	text-align:left;
+	margin-bottom:0px;
+}
+
+.quemSomos li img{
+	position:relative;
+	float:left;
+	padding-top: 8px;
+	margin-left:25px;
+	margin-right:15px;
+}
+
+.quemSomos li p{
+	position:relative;
+	float:left;
+	text-align:left;
+    font-family: 'open_sanslight';
+	color:#605f5e;
+	font-size:14px;
+    line-height: 24px;
+    height: calc(100% - 30px);
+    margin-right: 37px;
+    text-decoration: none;
+}
+
+.div_input{
+    position: relative;
+    float: right;
+    background: url("../images/select.png") no-repeat scroll 144px center #fff;
+    border: 1px solid #e0e0e0;
+    float: left;
+    height: 31px;
+    padding-top: 0;
+    width: 177px;
+	border-radius:5px;
+    margin-top: 22px;
+}
+.bg_option_r {
+    border: 0 solid #c2c2c2;
+    border-radius: 0;
+    color: #999999;
+    float: left;
+    font-size: 15px;
+    height: 30px;
+    margin: 0px 0 0;
+    overflow: visible;
+    padding: 0px 0 0px;
+    position: relative;
+    width: 100%;
+}
+.bg_option_r select {
+    opacity: 0 !important;
+}
+.bg_option_r label {
+	position: relative;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+    font-family: 'open_sansregular';
+    width: 100%;
+    color: #2d498c;
+    padding-top: 8px;
+    padding-left: 7px;
+}
+.optionTipo_r {
+    border: 1px solid #d1d1d1;
+    float: left;
+    height: 31px;
+    left: 0;
+    margin-top: 0;
+    position: relative;
+    top: -23px;
+    width: 100%;
+    z-index: 9;
+}
+	
+/*Popup ..................... */
+
+.black_overlay{
+	position:fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index:99999;
+	-moz-opacity: 0.5;
+	opacity:.80;
+	filter: alpha(opacity=50);
+	display:none;
+}
+
+.white_content {
+	position:fixed;
+	width: 980px;
+	height: 335px;
+	background-color:#ffffff;
+	z-index:9999999;
+	overflow:visible;
+	display:none;
+}
+
+.white_content .btFechar {
+	position:relative;
+	float: right;
+	width: 100%;
+	text-align:right;
+}
+
+.lightEsquerdo{
+	position:relative;
+	float:left;
+	width:27%;
+	height:auto;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.lightDireito{
+	position:relative;
+	float:left;
+	width:73%;
+	height:auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.white_content h4{
+	position: relative;
+	float: left;
+	font-size: 2.3em;
+    font-family: 'open_sansregular';
+    text-align: left;
+	color: #eb8420;
+	padding-top: 0px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	width: 100%;
+}
+
+.white_content h5{
+	position: relative;
+	float: left;
+	font-size: 1.6em;
+	line-height: 18px;
+    font-family: 'open_sansregular';
+    text-align: left;
+	color: #2d498c;
+	padding-top: 7px;
+	padding-left: 5px;
+	margin-top: 0;
+	width: calc(100% - 50px);
+}
+
+.white_content h6{
+	position: relative;
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+    font-family: 'open_sanslight';
+    text-align: left;
+	color: #321504;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-top: 0;
+	width: calc(100% - 50px);
+}
+
+.lightDireito h6{
+	position: relative;
+	float: left;
+	font-size: 11px;
+	line-height: 14px;
+    font-family: 'open_sansitalic';
+    text-align: left;
+	color: #321504;
+	padding: 0px;
+	margin: 0;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+.white_content p{
+	position: relative;
+	float: left;
+	font-size: 14px;
+	line-height: 18px;
+    font-family: 'open_sansregular';
+    text-align: left;
+	color: #555453;
+	padding-left: 20px;
+	padding-right: 30px;
+	margin-bottom: 8px;
+}
+
+.white_content span{
+    font-family: 'open_sansbold';
+    color: #eb8420;
+}
+
+.white_content p span{
+    font-family: 'open_sansregular';
+    color: #2d498c;
+}
+
+#x{
+	position:relative;
+	float:right;
+	right: 15px;
+	top: 20px;
+}
+
+.boxCupom{
+	position: relative;
+	float: left;
+	width: 72%;
+	margin-left: 14%;
+	margin-bottom: 15px;
+}
+
+.boxCupom img{
+	position: relative;
+	float: left;
+}
+
+.botaoAcesse{
+	position: relative;
+	display: inline-block;
+	border:1px solid #eb8420;
+    width: 85%;
+    height: 34px;
+    padding-top: 9px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'open_sanslight';
+    color: #eb8420;
+    background-color: #fff;
+    -webkit-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    -moz-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    -o-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    -ms-transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+    transition: all 0.3s cubic-bezier(0.0, 0.0, 0.3, 1.0);
+}
+
+.botaoAcesse:hover, .botaoAcesse:focus{
+	color: #fff !important;
+    background-color: #eb8420;
+}
+
+.telefone{
+	position: relative;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.telefone p{
+	width: 100%;
+}
+
+
+/*************** @MEDIA *********************/
+
+@media (min-width: 768px) and (max-width: 1000px) {
+	body{
+		font-size:8px;	
+	}
+	.container{
+		width: 750px;
+	}
+	.descricaoServico{
+		padding-top: 12px;
+	}
+	.quemSomos p{
+		width: 72%;
+	}
+	.quemSomos li p{
+		line-height: 20px;
+	}
+	.categorias{
+		width: 60px;
+		padding-top: 11px;
+	}
+	.categorias img{
+		width: 57px;
+	}
+	.categorias p{
+		font-size: 10px;
+	}
+	.div_input{
+		width: 140px;
+		background:url("../images/select.png") no-repeat scroll 108px center #fff
+	}
+	.bg_option_r label{
+		font-size: 12px;
+	}
+	.white_content{
+		width: 750px;
+	}
+	.boxCupom{
+    	width: 90%;
+    	margin-left: 5%;
+	}
+	.white_content h4{
+		margin-bottom: 15px;
+	}
+	.white_content p{
+		font-size: 13px;
+	}
+	.telefone{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	header{
+		height: 49px;
+	}
+	header p{
+		float: left;
+		width: auto;
+		height: 17px;
+		padding-top: 0;
+		padding-right: 7px;
+		border-right: 2px solid #ed8b24;
+		margin-top: 19px;
+	}
+	header a{
+		float: left;
+		width: auto;
+		padding-left: 7px;
+		margin-top: 15px;
+		margin-right: 12px;
+	}
+	.container{
+		width: 100%;
+	}
+	.menuTopo{
+		margin-left: 13px;
+		padding-top: 0;
+		height: 49px;
+		overflow: hidden;
+		width: 45%;
+	}
+	.aberto{
+		height: auto !important;
+	}
+	.menuTopo ul{
+		position: relative;
+		float: left;
+		width: 175px;
+		height: 117px;
+		padding:10px 20px;
+		background-color: #fff;
+	}
+	.menuTopo li{
+		width: 130px;
+		height: 33px;
+		border-bottom: 0.5px solid #ed8b24;
+	}
+	.menuTopo li:last-child{
+		border-bottom: 0px solid #ed8b24;
+	}
+	.menuTopo li a{
+		position: relative;
+		float: left;
+		height: 21px;
+		color: #ed8b24;
+		margin-right: 0;
+		text-align: left;
+		padding-top: 3px;
+		padding-bottom: 6px;
+		padding-left: 12px;
+		border-left: 2px solid #ed8b24;
+		margin-top: 6px;
+	}
+	.oculto{
+		display: block;
+	}
+	.login{
+		width: 50%;
+	}
+	.banner {
+	    margin-top: 49px;
+	    margin-bottom: -1px;
+	}
+	.faixaCategorias{
+		height: 44px;
+		text-align: center;
+	}
+	.categorias{
+		display: none;
+	}
+	.servico{
+		width: calc(50% - 19px);
+		margin-left: 13px;
+		height: 195px;
+		padding-top: 30px;
+		margin-bottom: 22px;
+		margin-right: 0;
+	}
+	.fundoQuemSomos{
+		background-image: none;
+		height: auto;
+		padding-bottom:40px;
+	}
+	.descricaoServico{
+		padding-top: 7px;
+	}
+	.descricaoServico h2{
+		padding-bottom: 5px;
+	}
+	.quemSomos h1{
+		width: 100%;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.quemSomos p{
+		width: 100%;
+		font-size:16px;
+		line-height:21px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.quemSomos ul{
+		width: 100%;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.quemSomos li p{
+		font-size:16px;
+		line-height:21px;
+		width: calc(100% - 45px);
+		line-height: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-right: 0;
+	}
+	.quemSomos li img {
+	    margin-left: 0px;
+	}
+	.div_input{
+		float: none;
+		display: inline-block;
+		width: 140px;
+		margin-top: 6px;
+		background:url("../images/select.png") no-repeat scroll 108px center #fff
+	}
+	.bg_option_r label{
+		font-size: 12px;
+	}
+	footer{
+		paddibg-top: 24px;
+	}
+	footer .container{
+		text-align: center;
+	}
+	footer img{
+		width:50px;
+		margin-left: 0;
+	}
+	footer p{
+		width: 260px;
+		padding-top: 1px;
+		font-size: 20px;
+		line-height: 22px;
+	}
+	.linhaCel{
+		position: relative;
+		display: inline-block;
+	}
+	.white_content{
+		height: 85vh;
+		width: 95%;
+		padding-bottom: 10px;
+		text-align: center;
+		overflow: scroll;
+	}
+	.lightEsquerdo{
+		width: 100%;
+		padding: 7px;
+	}
+	.lightDireito{
+		width: 100%;
+		padding: 7px;
+	}
+	.boxCupom{
+		width: 70%;
+		margin: 10px 15% 0px 15%;
+	}
+	.botaoAcesse{
+		width: 193px;
+		margin: 20px 0 20px 0;
+	}
+	.white_content h4, .lightDireito h6, .white_content p{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.linha0{
+		position: fixed;
+	}
+	#x{
+		right: 30px;
+	}
+
+}
+
+
+/* @FACE ---------------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../js/fontes/opensans-bold-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('../js/fontes/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../js/fontes/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('../js/fontes/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('../js/fontes/opensans-italic-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../js/fontes/opensans-light-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('../js/fontes/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../js/fontes/opensans-regular-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../js/fontes/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('../js/fontes/opensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('../js/fontes/opensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

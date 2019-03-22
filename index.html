@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <title>Teste Certisign</title>
+
+    <!-- Reset -->
+    <link href="css/reset.css" rel="stylesheet" media="all">
+
+    <!-- CSS -->
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/estilos.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+
+    <!-- POP UP -->
+    <div id="light1" class="white_content">
+        <div class="lightAtendimento">
+            <div class="linha0">
+                <a id="x" class="cursor" onclick="lightBoxClosed('1');" title="Fechar">
+                    <img src="images/fechar.png" width="20" alt="" title="" />>
+                </a>
+            </div>
+            <div class="linha">
+                <div class="lightEsquerdo">
+                    <img src="images/foto.png" width="140" alt="" title="" />
+                    <div class="boxCupom">
+                        <img src="images/cupom.png" width="45" alt="" title="" />
+                        <h5>Cupom - <span>DSC2015</span></h5>
+                        <h6>(insira o cupom de desconto  no carrinho)</h6>
+                    </div>
+                    <div class="boxCupom">
+                        <img src="images/desconto.png" width="45" alt="" title="" />
+                        <h5>10% de desconto em todo site</h5>
+                    </div>
+                    <a href="" class="botaoAcesse">Acesse agora e aproveite!</a>
+                </div>
+                <div class="lightDireito">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna libero, maximus eu sodales ut, porta non felis. Proin sit amet semper orci, at porttitor nunc. Pellentesque id neque pulvinar, faucibus nunc quis, tincidunt lacus. Quisque ac libero at ex hendrerit sollicitudin ac eu ex. Suspendisse ultricies condimentum lacus. Phasellus ultricies magna ac ex ornare.</p>
+
+                    <p>Etiam lacinia lacinia condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sed mauris et dui posuere faucibus sed viverra massa. </p>
+
+                    <div class="telefone">
+                        <p><span>Telefone:</span> (11) 99999-9999</p>
+                        <p><span>E-mail:</span> email@email.com</p>
+                    </div>
+
+                    <h6>Nullam fermentum auctor arcu, a convallis massa eleifend iaculis. Fusce orci erat, elementum vitae urna vitae, vehicula tincidunt velit. Mauris id hendrerit justo. Etiam a consectetur lorem. Vestibulum vulputate.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fade1" class="black_overlay"></div>
+
+    <!-- CABECALHO -->
+    <header>
+        
+        <div class="container">
+
+            <!-- MENU -->
+            <div class="menuTopo">
+                <img src="images/menu.png" onclick="ativaMenu();" width="54" class="oculto" alt="" title="" />
+                <nav class="">
+                    <ul>
+                        <li><a href="" target="">Produtos</a></li>
+                        <li><a href="" target="">Quem Somos</a></li>
+                        <li><a href="" target="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- LOGIN -->
+            <div class="login">
+                <p>Olá, Nome</p>
+                <a href="#">Logoff</a>
+            </div>
+        </div>
+                  
+    </header>
+
+    <!-- CORPO -->
+    <div class="corpo">
+        
+        <!-- BANNER -->
+        <div class="linha banner">
+            <div class="container">
+
+                <img src="images/banner.png" width="100%" alt="" title="" />
+
+            </div>
+		</div>
+		
+        <!-- CATEGORIAS -->
+		<div class="linha faixaCategorias">
+            <div class="container">
+
+                <div class="categorias">
+                    <img src="images/eletro.png" width="65" alt="" title="" />
+                    <p>Eletro</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/presente.png" width="65" alt="" title="" />
+                    <p>Presente</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/moda.png" width="65" alt="" title="" />
+                    <p>Moda</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/esporte.png" width="65" alt="" title="" />
+                    <p>Esporte</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/saude.png" width="65" alt="" title="" />
+                    <p>Saúde</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/beleza.png" width="65" alt="" title="" />
+                    <p>Beleza</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/gastronomia.png" width="65" alt="" title="" />
+                    <p>Gastronomia</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/decoracao.png" width="65" alt="" title="" />
+                    <p>Decoração</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/cultura.png" width="65" alt="" title="" />
+                    <p>Cultura</p>
+                </div>
+                <div class="categorias">
+                    <img src="images/outros.png" width="65" alt="" title="" />
+                    <p>Outros</p>
+                </div>
+
+                <div id="div_1" class="div_input">
+                    <div id="div_categ" class="dropdown bg_option_r">
+                        
+                        <label id="label_uf" for="categ">Mais procurados</label>
+                        <select id="Categoria" name="Categoria" title="" class="optionTipo_r validar">
+                            <option value="" selected="selected">Selecione</option>
+                            <option value="1">Eletro</option>
+                            <option value="2">Presente</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+		</div>
+		
+        <!-- SERVIÇOS -->
+		<div class="linha servicos">
+            <div class="container">
+
+                <div class="servico fundoRosa">
+                    <img src="images/icone-01.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Lorem ipsum</h2>
+                        <h3>10% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoRoxo">
+                    <img src="images/icone-02.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Auctor Arcu</h2>
+                        <h3>12% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoPreto">
+                    <img src="images/icone-03.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Mauris Porttitor</h2>
+                        <h3>15% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoAzulClaro">
+                    <img src="images/icone-04.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Orci Varius</h2>
+                        <h3>20% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoAzulEscuro">
+                    <img src="images/icone-05.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Morbi Pharetra</h2>
+                        <h3>18% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoPreto">
+                    <img src="images/icone-06.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Vestibulum Lectus</h2>
+                        <h3>32% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoRoxoEscuro">
+                    <img src="images/icone-07.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Saggitis Feugiat</h2>
+                        <h3>20% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoVerde">
+                    <img src="images/icone-08.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Cras Pulvinian</h2>
+                        <h3>12% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoVerdeEscuro">
+                    <img src="images/icone-09.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>Aenean Massa</h2>
+                        <h3>20% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="servico fundoPreto">
+                    <img src="images/icone-10.png" width="90" alt="" title="" />
+                    <div class="descricaoServico">
+                        <h2>EX Magna</h2>
+                        <h3>5% de desconto</h3>
+                        <a class="botaoSaiba" href="">Saiba mais</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- QUEM SOMOS -->
+        <div class="linha quemSomos">
+            <div class="container fundoQuemSomos">
+
+                <h1>Quem Somos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae finibus tortor. Fusce eu tempus nulla. Duis blandit auctor ex, a lacinia erat porttitor non. Sed tempus tincidunt diam non pharetra. Sed sodales porta felis nec hendrerit. Morbi vulputate ligula a dolor scelerisque semper.</p>
+                <p>Praesent pulvinar velit nec ligula auctor pharetra. Aenean non egestas purus, at consequat nulla. Aenean molestie nisl ex.</p>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <img src="images/quem-somos-01.png" width="27" alt="" title="" />
+                            <p><span>Sed vel fringilla libero,</span> blandit facilisis enim lotus;</p>
+                        </li>
+                        <li>
+                            <img src="images/quem-somos-02.png" width="27" alt="" title="" />
+                            <p>Maecenas ut vehicula leo. Proin non lacinia nunc;</p>
+                        </li>
+                        <li>
+                            <img src="images/quem-somos-03.png" width="27" alt="" title="" />
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus;</p>
+                        </li>
+                        <li>
+                            <img src="images/quem-somos-04.png" width="27" alt="" title="" />
+                            <p>Nullam porta, ex commodo tincidunt imperdiet, massa urna malesuada eros, quis aliquet <span>lacus quam id dolor.</span></p>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+		</div>
+			
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        
+        <div class="container al_center">
+            <div class="linhaCel">
+    			<img src="images/sac.png" width="39" alt="" title="" />
+    			<p>Caso tenha dúvidas, <a href="">entre em contato conosco</a></p>
+            </div>
+        </div>
+                  
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="<?=__SITE__?>js/jquery-1.12.4.min.js"></script>-->
+    <script src="js/jquery-3.3.1.min.js"></script> 
+    <script src ="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/funcoes.js"></script>
+    
+</body>
+</html>
